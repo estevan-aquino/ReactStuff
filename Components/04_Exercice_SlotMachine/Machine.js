@@ -5,21 +5,20 @@
 
 class Machine extends React.Component {
     render () {
-        let props = this.props.s1
-        let slot =[];
+        const {s1, s2, s3} = this.props;
 
-        for (i=0;i<props.length;i++){
-            slot = shift.props[i];
-        }
+        // for (i=0;i<props.length;i++){
+        //     slot = shift.props[i];
+        // }
 
-        if (this.props.s1 === this.props.s2 && this.props.s1 === this.props.s3) {
+        if (s1 === s2 && s1 === s3) {
             slot = "You Win! " + this.props.s1
         } else {
             slot = "You lose, try again!"
         }
         return (
             <div>
-                <div>{this.props.s1 + this.props.s2 + this.props.s3}</div>
+                <div>{s1}{s2}{s3}</div>
                 <p>{slot}</p>
             </div>
         )
