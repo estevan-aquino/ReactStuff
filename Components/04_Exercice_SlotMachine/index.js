@@ -18,7 +18,7 @@ class App extends React.Component {
             <div>
                 <h1> Slot Machine !!</h1>
                 <Machine
-                 s1= {slot()}
+                 s1={slot()}
                  s2={slot()}
                  s3={slot()}
                  />

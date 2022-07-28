@@ -7,10 +7,6 @@ class Machine extends React.Component {
     render () {
         const {s1, s2, s3} = this.props;
 
-        // for (i=0;i<props.length;i++){
-        //     slot = shift.props[i];
-        // }
-
         if (s1 === s2 && s1 === s3) {
             slot = "You Win! " + this.props.s1
         } else {
