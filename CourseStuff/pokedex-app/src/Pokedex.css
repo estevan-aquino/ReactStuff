@@ -1,0 +1,10 @@
+.Pokedex-cards {
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    flex-flow: row wrap;
+    width: 65%;
+    max-height: 300px;
+    padding: 10px;
+    margin: 100px auto;
+}

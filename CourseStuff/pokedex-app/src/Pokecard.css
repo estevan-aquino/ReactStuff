@@ -1,3 +1,15 @@
 .Pokecard {
-    border: 4px solid slateblue
+    background-color: mediumslateblue;
+    border-radius: 15px;
+    width: 250px;
+    padding: 0.5rem;
+    margin: 0.5rem ;
+    transition: all ease 500ms;
+    justify-self: center;
+}
+
+.Pokecard:hover{
+    margin: 1.5rem ;
+    transition: all ease 500ms;
+    
 }
