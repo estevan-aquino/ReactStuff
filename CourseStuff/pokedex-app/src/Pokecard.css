@@ -1,15 +1,26 @@
 .Pokecard {
-    background-color: mediumslateblue;
+    background-color: rgb(152, 134, 251);
     border-radius: 15px;
     width: 250px;
+    height: 200px;
     padding: 0.5rem;
     margin: 0.5rem ;
-    transition: all ease 500ms;
-    justify-self: center;
+    text-align: center;
 }
 
-.Pokecard:hover{
-    margin: 1.5rem ;
+.Pokecard-title{
+    font-size: 20px;
+}
+
+.Pokecard-data{
+    font-size: 13px;
+}
+
+.Pokecard img{
+    transform: scale(1.5);
     transition: all ease 500ms;
-    
+}
+
+.Pokecard img:hover{
+    transform: scale(1.7);
 }

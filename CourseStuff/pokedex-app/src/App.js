@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Pokecard from './Pokecard';
 import Pokedex from './Pokedex';
 import './App.css';
