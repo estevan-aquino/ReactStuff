@@ -29,7 +29,7 @@ class Pokegame extends Component {
 
         return (
             <div>
-                <h1 className='title'>Pokedex!</h1>
+                
                 <Pokedex  pokemon={hand1} exp={exp1} isWinner={exp1 > exp2}/>
                 <Pokedex  pokemon={hand2} exp={exp2} isWinner={exp1 < exp2}/>
             </div>
