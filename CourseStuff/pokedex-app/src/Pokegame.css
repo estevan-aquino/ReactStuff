@@ -1,3 +1,4 @@
 .title {
-    margin-left: 44.5%
+    display: flex;
+    justify-content: center;
 }
