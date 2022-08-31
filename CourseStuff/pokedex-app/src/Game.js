@@ -27,3 +27,5 @@ class Game extends Component {
 }
 
 export default Game;
+
+// introduction to "super" and "super(props)"

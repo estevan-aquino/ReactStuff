@@ -4,7 +4,7 @@ class Rando extends Component{
     constructor(props){
         super(props);
         this.state = {num: 0};
-        this.makeTimer();
+        //this.makeTimer();
     }
 
     makeTimer(){
@@ -23,4 +23,6 @@ class Rando extends Component{
     }
 }
 
-export  default Rando
+export default Rando
+
+// This creates a random number in the screen
