@@ -11,7 +11,7 @@ function App() {
   <div className="App" >
 
     <Game />
-    <Rando maxNum={7}/>
+    <Rando maxNum={55}/>
     <Button />
     <BrokenButton maxNum={10} />
       

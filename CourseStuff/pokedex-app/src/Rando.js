@@ -4,7 +4,7 @@ class Rando extends Component{
     constructor(props){
         super(props);
         this.state = {num: 0};
-        //this.makeTimer();
+        this.makeTimer();
     }
 
     makeTimer(){

@@ -1,0 +1,37 @@
+.Pokedex-cards {
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    flex-flow: row wrap;
+    width: 65%;
+    max-height: 300px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.Pokedex {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    align-self: center;
+}
+
+.Pokedex-winner {
+    background-color: lightgreen;
+    border-radius: 15px;
+    width: 315px;
+    height: 50px;
+    text-align: center;
+    padding-top: 1.5%
+}
+
+.Pokedex-loser {
+    background-color: lightcoral;
+    border-radius: 15px;
+    width: 315px;
+    height: 50px;
+    text-align: center;
+    padding-top: 1.5%
+}
