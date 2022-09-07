@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+import "./Dice.css";
 
 class Dice extends Component {
     render () {
-        return (
-            <div>
-                <i className={`fa-solid fa-dice-${this.props.face}`}></i>
-            </div>
-        )
+        return <i className=
+        {`Dice fa-solid fa-dice-${this.props.face} ${this.props.rolling && "Rolli"}`}></i>
     }
 }
 

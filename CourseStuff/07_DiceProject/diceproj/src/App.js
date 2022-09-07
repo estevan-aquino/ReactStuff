@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Dice from './Dice.js'
+import RollDice from './RollDice.js'
+import './RollDice.css'
 import './App.css';
 
 // function App() {
@@ -18,13 +19,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <div>
-          <Dice face='one'/>
-          <Dice face='two'/>
-          <Dice face='three'/>
-          <Dice face='four'/>
-          <Dice face='five'/>
-        </div>
+          <RollDice />
     </div>
     )
   }
