@@ -15,16 +15,28 @@ class CoinFlipper extends Component {
 
     flip(){
         let randNum= this.props.lados[Math.floor(Math.random()* this.props.lados.length)]
-        this.setState({faces: randNum})
-        if (randNum === "heads-jpg"){
-            let contador = this.state.hCounter + 1;
-            let viradas = this.state.flips + 1;
-            this.setState({hCounter: contador, flips: viradas})
-        } else {
-            let contador = this.state.tCounter + 1;
-            let viradas = this.state.flips + 1;
-            this.setState({tCounter: contador, flips: viradas})
-        }
+        
+        this.setState(st =>{
+            if (randNum === "tails-jpg"){
+                st.hCounter += 1;
+            }else{
+                st.tCounter += 1;
+            }
+            return {
+               faces: st.faces = randNum,
+               flips: st.flips =+ 1
+            }
+        })
+        // this.setState({faces: randNum})
+        // if (randNum === "heads-jpg"){
+        //     let contador = this.state.hCounter + 1;
+        //     let viradas = this.state.flips + 1;
+        //     this.setState({hCounter: contador, flips: viradas})
+        // } else {
+        //     let contador = this.state.tCounter + 1;
+        //     let viradas = this.state.flips + 1;
+        //     this.setState({tCounter: contador, flips: viradas})
+        // }
     }
     
     render(){
