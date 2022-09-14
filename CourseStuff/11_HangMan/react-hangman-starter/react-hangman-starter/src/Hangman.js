@@ -52,9 +52,7 @@ class Hangman extends Component {
       guessed: st.guessed.add(ltr),
       nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : 1)
     }));
-    
-    let condition = JSON.stringify(this.guessed)
-    console.log(condition)
+  
   }
 
   /** generateButtons: return array of letter buttons to render */
@@ -71,34 +69,18 @@ class Hangman extends Component {
     ));
   }
 
-  handleWin(){
-    let myArr = Array.from(this.props.answer)
-    let 
-    function leg (a){
-     
-    }
-
-    this.state.guessed.forEach(leg);
-
-    return
-  }
-
   /** render: render game */
   render() {
+    let ges = !this.guessedWord().includes("_")
     console.log(this.state.guessed)
-    console.log(set(this.state.answer))
+    console.log(this.state.answer)
+    console.log(ges)
     
     let  letters;
     let alter = `${this.state.nWrong}/${this.props.maxWrong}`
 
     if (this.props.maxWrong >= this.state.nWrong){
       letters = <p className='Hangman-btns'>{this.generateButtons()}</p>
-    } else if (this.state.guessed === this.props.answer) {
-      letters = 
-        <div>
-          <p>You WIN!</p>
-          <button className="Reset" onClick={this.reset}>RESTART!</button>
-        </div>
     } else {
       letters = 
         <div>
@@ -112,9 +94,9 @@ class Hangman extends Component {
       <div className='Hangman'>
         <h1>Hangman</h1>
         <img src={this.props.images[this.state.nWrong]} alt={alter} />
-        <p className="Hangman-wrong">You guessed {this.state.nWrong} of {this.props.maxWrong} times!</p>
+        <p className="Hangman-wrong">You guessed wrong {this.state.nWrong} of {this.props.maxWrong} times!</p>
         <p className='Hangman-word'>{this.guessedWord()}</p>
-        {/* <p className='Hangman-btns'>{this.generateButtons()} */}
+        {!this.guessedWord().join("_") && <p>You WIN!</p>}
         {letters}
       </div>
     );
