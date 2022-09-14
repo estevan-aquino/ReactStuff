@@ -1,0 +1,14 @@
+.Lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+    height: 12vw;
+    margin: 1rem;
+}
+
+.Lista button {
+    width: 100px;
+    height: 60px;
+
+}
