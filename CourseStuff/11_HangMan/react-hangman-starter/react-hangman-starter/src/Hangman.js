@@ -75,20 +75,15 @@ class Hangman extends Component {
     console.log(this.state.guessed)
     console.log(this.state.answer)
     console.log(ges)
-    
-    let  letters;
+    let gameState = this.generateButtons()
+    let gameOver = this.props.maxWrong <= this.state.nWrong;
+    if(ges) gameState = <div><p>You WIN!!!!</p></div>
+    if(gameOver) gameState = 
+      <div>
+        <p>You LOSE!</p>
+        <p>The answer was "{this.state.answer}" better luck next time!</p>
+      </div>;
     let alter = `${this.state.nWrong}/${this.props.maxWrong}`
-
-    if (this.props.maxWrong >= this.state.nWrong){
-      letters = <p className='Hangman-btns'>{this.generateButtons()}</p>
-    } else {
-      letters = 
-        <div>
-          <p>You LOSE!</p>
-          <p>The answer was "{this.state.answer}" better luck next time!</p>
-          <button className="Reset" onClick={this.reset}>RESTART!</button>
-        </div>
-    }
 
     return (
       <div className='Hangman'>
@@ -96,8 +91,10 @@ class Hangman extends Component {
         <img src={this.props.images[this.state.nWrong]} alt={alter} />
         <p className="Hangman-wrong">You guessed wrong {this.state.nWrong} of {this.props.maxWrong} times!</p>
         <p className='Hangman-word'>{this.guessedWord()}</p>
-        {!this.guessedWord().join("_") && <p>You WIN!</p>}
-        {letters}
+        <p className='Hangman-btns'>{gameState}</p>
+        <div>
+          <button className="Reset" onClick={this.reset}>RESTART!</button>
+        </div>
       </div>
     );
   }
