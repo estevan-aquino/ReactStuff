@@ -1,0 +1,15 @@
+h1 {
+    margin: 0px;
+}
+.Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Container {
+    padding: 0.3rem;
+}

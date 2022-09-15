@@ -1,0 +1,8 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://cdn.wallpapersafari.com/32/74/MJvzBE.jpg');
+  background-size: cover;
+  min-height: 100vh;
+}
