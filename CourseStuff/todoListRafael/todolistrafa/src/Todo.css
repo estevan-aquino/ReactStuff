@@ -2,3 +2,11 @@
     color: white;
     text-decoration: line-through
 }
+
+.line {
+    display: flex;
+}
+
+.line li {
+    margin-right: auto;
+}

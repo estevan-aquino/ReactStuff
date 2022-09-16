@@ -5,9 +5,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: auto;
+    height: auto;
+    min-height: 20rem;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 1%;
+
+    background-color: rgb(231, 201, 33);
+    box-shadow: 3px 3px 2px 2px black;
 }
 
 .Container {

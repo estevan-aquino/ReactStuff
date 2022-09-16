@@ -47,8 +47,8 @@ class Todo extends Component {
         let salvar
             if (this.state.editar){
                 salvar = 
-                <div>
-                    <li className={this.props.doneTodo ? "done" : ""} onClick={this.hDone}>{this.props.tsk}</li>
+                <div className="line">
+                    <li className={this.props.doneTodo ? "done" : ""} onClick={this.hDone}>{this.props.tsk} </li>
                     <button onClick={this.editSave}>Edit</button>
                     <button onClick={this.hRemove}>Remove</button>
                 </div>
