@@ -2,7 +2,7 @@ h1 {
     margin: 0px;
 }
 .Wrapper {
-    display: flex;
+    display: flex column;
     justify-content: center;
     align-items: center;
     height: auto;

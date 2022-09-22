@@ -5,8 +5,10 @@
 
 .line {
     display: flex;
+    padding-top: 10px;
 }
 
 .line li {
     margin-right: auto;
+    
 }
